@@ -1,10 +1,10 @@
-# 🛞 Autonomous RC Car with Dual OpenMV Cameras + Custom PCB
+# Autonomous RC Car with Dual OpenMV Cameras + Custom PCB
 
 This project turns a standard RC car into an autonomous vehicle using two OpenMV Cam H7 microcontrollers, a custom motor control PCB, and onboard computer vision and control algorithms. The car can detect lane markings, adjust steering with PID control, and respond to stop signs or traffic lights autonomously.
 
 ---
 
-## 📸 Features
+## Features
 
 - **Dual-Camera System**:
   - **Primary OpenMV** handles real-time lane detection and PID steering control.
@@ -27,23 +27,23 @@ This project turns a standard RC car into an autonomous vehicle using two OpenMV
 
 ---
 
-## 🧠 Software Overview
+## Software Overview
 
-### 🧭 `main_camera/main.py`
+### `main_camera/main.py`
 - Detects left and right lane boundaries using `find_lines()`.
 - Computes lane center and deflection angle.
 - Applies PID corrections to steer the servo motor.
 - Receives UART commands (`'R'`, `'B'`) from the secondary camera to control movement logic.
 
-### 🛑 `secondary_camera/main.py`
+### `secondary_camera/main.py`
 - Detects stop signs (red) and traffic lights (blue) using color blob filtering.
 - Sends corresponding control commands to the main camera over UART.
 
 ---
 
-## 🧰 Hardware Overview
+## Hardware Overview
 
-### 🎛️ Components:
+### Components:
 - 2x OpenMV Cam H7 R1
 - Custom Motor Control PCB
   - VNH5019A-E (Motor Driver H-Bridge)
@@ -53,7 +53,7 @@ This project turns a standard RC car into an autonomous vehicle using two OpenMV
 - DC motor (driving)
 - Ultrasonic sensor (optional)
 
-### 🧾 PCB:
+### PCB:
 - Located in `pcb_design/`:
   - `Motor_Control_PCB_Schematic.SchDoc`
   - `Motor_Control_PCB.PcbDoc`
@@ -63,7 +63,7 @@ This project turns a standard RC car into an autonomous vehicle using two OpenMV
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 autonomous-rc-car-openmv/
@@ -81,7 +81,7 @@ autonomous-rc-car-openmv/
 
 ---
 
-## ▶️ Getting Started
+## Getting Started
 
 ### Flashing Code
 1. Connect each OpenMV Cam H7 to your computer.
@@ -94,7 +94,7 @@ autonomous-rc-car-openmv/
 
 ---
 
-## 🎓 Contributors
+## Contributors
 
 Team 11 – UC Davis EEC195B (Spring 2023)  
 - Allen Benjamin  
@@ -104,12 +104,12 @@ Team 11 – UC Davis EEC195B (Spring 2023)
 
 ---
 
-## 📄 License
+## License
 
 MIT License – Feel free to use and build on this work.
 ---
 
-## 📚 What I Learned & Challenges Faced
+## What I Learned & Challenges Faced
 
 This project, part of my UC Davis senior design course, helped me understand the realities of building a hardware-software integrated autonomous system from the ground up. Some major lessons and hurdles that were encountered include:
 
