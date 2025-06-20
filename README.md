@@ -109,7 +109,7 @@ Team 11 – UC Davis EEC195B (Spring 2023)
 MIT License – Feel free to use and build on this work.
 ---
 
-## 📚 What We Learned & Challenges Faced
+## 📚 What I Learned & Challenges Faced
 
 This project, part of my UC Davis senior design course, helped me understand the realities of building a hardware-software integrated autonomous system from the ground up. Some major lessons and hurdles that were encountered include:
 
@@ -121,6 +121,6 @@ This project, part of my UC Davis senior design course, helped me understand the
 
 - **Motor Control & Electrical Design**: Building a custom PCB to drive the motor required understanding H-bridge logic, power regulation, and noise considerations. Debugging voltage drops and ensuring consistent servo performance was a hands-on challenge using tools such as multimeters and oscilloscopes.
 
-- **Object Detection Trade-offs**: Differentiating traffic signs by shape and color proved harder than expected due to lighting variability. We tuned color thresholds and used blob filtering but were unable to fully implement multiple shape classification due to time constraints; it was only able to recognize a stop sign.
+- **Object Detection Trade-offs**: Differentiating traffic signs by shape and color proved harder than expected due to lighting variability. Tuned color thresholds and used blob filtering but was unable to fully implement multiple shape classification due to time constraints; the system was only able to recognize a stop sign.
 
 Through these challenges, I gained a strong appreciation for embedded systems integration, automation, feedback control systems, hardware debugging, and real-time computer vision. This project deepened my understanding of what it takes to build intelligent robotics systems under real-world constraints.
