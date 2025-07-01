@@ -87,7 +87,7 @@ autonomous-rc-car-openmv/
 
 ## Demos
 ### Final Stage
-#### These are the results after our fine-tuning the PID control, changing the lens of the camera and position, and speed of the motors.
+#### These are the results after fine-tuning the PID control, changing the lens of the camera and position, and speed of the motors.
 
 
 https://github.com/user-attachments/assets/44be90bd-d48b-43dc-be2d-269255d64255
@@ -103,7 +103,7 @@ https://github.com/user-attachments/assets/dc6b864e-3a49-413b-9ed1-0df4bd97565a
 
 
 ### Early Stages
-#### In these videos the vehicle was moving rapidly with our original camera setup.
+#### In these videos the vehicle was moving rapidly with the original camera setup.
 
 https://github.com/user-attachments/assets/fd988b70-d625-4ca6-ac14-b9c5d380a936
 
