@@ -61,6 +61,10 @@ This project turns a standard RC car into an autonomous vehicle using two OpenMV
 - Supplies regulated 5V to OpenMV boards and sensors.
 - Implements motor H-bridge control using PWM and direction pins.
 
+![pcb](https://github.com/user-attachments/assets/72682f8f-5e9a-4a1b-8a30-057a7c5c9904)
+![pcb_soldered](https://github.com/user-attachments/assets/166d2a23-edc1-44f8-9b00-e15676455ec0)
+
+
 ---
 
 ## Project Structure
