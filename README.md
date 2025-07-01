@@ -61,8 +61,8 @@ This project turns a standard RC car into an autonomous vehicle using two OpenMV
 - Supplies regulated 5V to OpenMV boards and sensors.
 - Implements motor H-bridge control using PWM and direction pins.
 
-![pcb](https://github.com/user-attachments/assets/72682f8f-5e9a-4a1b-8a30-057a7c5c9904)
-![pcb_soldered](https://github.com/user-attachments/assets/166d2a23-edc1-44f8-9b00-e15676455ec0)
+![pcb](https://github.com/user-attachments/assets/24b414fb-d705-457e-9dc0-b190cacfff83)
+![pcb_soldered](https://github.com/user-attachments/assets/e8383ae2-cbee-43d2-8760-e2a2ba9f1b8d)
 
 
 ---
@@ -85,28 +85,36 @@ autonomous-rc-car-openmv/
 
 ---
 
-## Getting Started
+## Demos
+### Final Stage
+#### These are the results after our fine-tuning the PID control, changing the lens of the camera and position, and speed of the motors.
 
-### Flashing Code
-1. Connect each OpenMV Cam H7 to your computer.
-2. Use the [OpenMV IDE](https://openmv.io/pages/download) to flash:
-   - `main_camera/main.py` to the lane-following camera.
-   - `secondary_camera/main.py` to the stop sign/traffic camera.
 
-### Hardware Hookups
-- Follow the circuit diagram and use the PCB to route motor power, servo PWM, and UART between cameras.
+https://github.com/user-attachments/assets/44be90bd-d48b-43dc-be2d-269255d64255
+
+
+https://github.com/user-attachments/assets/53b951c1-6080-4d27-8b6c-5c1552a5a7dd
+
+
+https://github.com/user-attachments/assets/dc6b864e-3a49-413b-9ed1-0df4bd97565a
+
+
+
+
+
+### Early Stages
+#### In these videos the vehicle was moving rapidly with our original camera setup.
+
+https://github.com/user-attachments/assets/fd988b70-d625-4ca6-ac14-b9c5d380a936
+
+
+
+https://github.com/user-attachments/assets/4a382cb0-890e-4faf-9e40-1fc2b4b36d7a
+
+
 
 ---
 
-## Contributors
-
-Team 11 – UC Davis EEC195B (Spring 2023)  
-- Allen Benjamin  
-- Edwin Munguia  
-- Hugo Wong  
-- Rene Lim
-
----
 
 ## What I Learned & Challenges Faced
 
@@ -122,6 +130,15 @@ This project, part of my UC Davis senior design course, helped me understand the
 
 - **Motor Control & Electrical Design**: Building a custom PCB to drive the motor required understanding H-bridge logic, power regulation, and noise considerations. Debugging voltage drops and ensuring consistent servo performance was a hands-on challenge using tools such as multimeters and oscilloscopes.
 
+## Contributors
+
+Team 11 – UC Davis EEC195B (Spring 2023)  
+- Allen Benjamin  
+- Edwin Munguia  
+- Hugo Wong  
+- Rene Lim
+
+---
 - **Object Detection Tradeoffs**: Differentiating traffic signs by shape and color proved harder than expected due to lighting variability. Tuned color thresholds and used blob filtering but was unable to fully implement multiple shape classification due to time constraints; the system was only able to recognize a stop sign.
 
 Through these challenges, I gained a strong appreciation for embedded systems integration, automation, feedback control systems, hardware debugging, and real-time computer vision. This project deepened my understanding of what it takes to build intelligent robotics systems under real-world constraints.
