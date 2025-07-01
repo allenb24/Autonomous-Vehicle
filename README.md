@@ -105,9 +105,6 @@ https://github.com/user-attachments/assets/dc6b864e-3a49-413b-9ed1-0df4bd97565a
 ### Early Stages
 #### In these videos the vehicle was moving rapidly with the original camera setup.
 
-https://github.com/user-attachments/assets/fd988b70-d625-4ca6-ac14-b9c5d380a936
-
-
 
 https://github.com/user-attachments/assets/4a382cb0-890e-4faf-9e40-1fc2b4b36d7a
 
@@ -129,6 +126,11 @@ This project, part of my UC Davis senior design course, helped me understand the
 - **Performance Tradeoffs**: Initially, speed was just as important as lane detection accuracy. After testing and recognizing hardware limitations being evident in terms of lane detection processing, priorities shifted towards accuracy. This was done by reducing the speed of the DC motor which allowed for more accurate lane detection processing, since the lanes wouldn't be changing so rapidly.
 
 - **Motor Control & Electrical Design**: Building a custom PCB to drive the motor required understanding H-bridge logic, power regulation, and noise considerations. Debugging voltage drops and ensuring consistent servo performance was a hands-on challenge using tools such as multimeters and oscilloscopes.
+- **Object Detection Tradeoffs**: Differentiating traffic signs by shape and color proved harder than expected due to lighting variability. Tuned color thresholds and used blob filtering but was unable to fully implement multiple shape classification due to time constraints; the system was only able to recognize a stop sign.
+
+Through these challenges, I gained a strong appreciation for embedded systems integration, automation, feedback control systems, hardware debugging, and real-time computer vision. This project deepened my understanding of what it takes to build intelligent robotics systems under real-world constraints.
+
+---
 
 ## Contributors
 
@@ -137,11 +139,6 @@ Team 11 – UC Davis EEC195B (Spring 2023)
 - Edwin Munguia  
 - Hugo Wong  
 - Rene Lim
-
----
-- **Object Detection Tradeoffs**: Differentiating traffic signs by shape and color proved harder than expected due to lighting variability. Tuned color thresholds and used blob filtering but was unable to fully implement multiple shape classification due to time constraints; the system was only able to recognize a stop sign.
-
-Through these challenges, I gained a strong appreciation for embedded systems integration, automation, feedback control systems, hardware debugging, and real-time computer vision. This project deepened my understanding of what it takes to build intelligent robotics systems under real-world constraints.
 
 ---
 
